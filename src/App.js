@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Coming() {
+  // eslint-disable-next-line no-undef
+  useEffect(() => {
+    document.title = "Linkifyer.de | Your ways to Link Links";   }, []);
   return (
     <div class="relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
     
