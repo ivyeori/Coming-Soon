@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-function Coming() {
-  // eslint-disable-next-line no-undef
-  useEffect(() => {
-    document.title = "Linkifyer.de | Your ways to Link Links";   }, []);
-  return (
-    <div class="relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
+class App extends Component {
+  componentDidMount() {
+    document.title = "Coming Soon | Linkifyer.de";
+  }
+
+  render() {
+    return (
+      <div>
+         <div class="relative min-h-screen flex flex-col justify-center items-center bg-hero bg-cover">
     
     <div class="relative z-10 py-6 space-y-16 lg:space-y-32 text-gray-900">
         <div class="text-center space-y-10">
@@ -15,9 +18,9 @@ function Coming() {
     </div>
     </div>
     </div>
-    
-   
-  )
+      </div>
+    );
+  }
 }
 
-export default Coming
+export default App;
